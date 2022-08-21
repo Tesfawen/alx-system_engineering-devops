@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Display a list
+
+export var1=ls
+for x in $($var1); do
+echo "$x" |cut -d "-" -f2
+done
